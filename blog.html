@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="blog.css">
+    <script src="https://kit.fontawesome.com/557ac422ea.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Shopping_web_site</title>
+</head>
+
+<body>
+    <!-- ---Header area--- -->
+    <header class="header-area header-sticky">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">Shopping</a>
+                <button class="navbar-toggler navToggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars icon-bar"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto nav-menu">
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="pages.html">Pages</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav-right">
+                        <li class="nav-item">
+                            <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="icon-shop-cart"><i class="fas fa-shopping-cart"
+                                    style="    transform: rotateY(150deg);"></i></a>
+                            <span class="badge rounded-pill bg-primary nav-badge">3</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="button button-area">Buy Now</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ---Header area end--- -->
+    <!-- ---Banner area--- -->
+    <section class="banner-page">
+        <div class="container position-relative">
+            <div class="banner-title text-center p-tb ">
+                <h1 class="hd-color">Our Blog</h1>
+                <p><a href="index.html">Home</a></p>
+                <span>-</span><span>Blog</span>
+            </div>
+        </div>
+    </section>
+    <!-- ---Banner area end--- -->
+    <!-- ---Post-Categories--- -->
+    <section class="blog-post-categories pt-pb-100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 mb-4">
+                    <div class="card post-categories position-relative">
+                        <img src="post-img-1.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body post-categories-details position-absolute">
+                            <div class="post-categories-text">
+                                <p class="card-text text-white text-center">Enyoy your social life together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 mb-4">
+                    <div class="card post-categories position-relative">
+                        <img src="post-img-2.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body post-categories-details position-absolute">
+                            <div class="post-categories-text">
+                                <p class="card-text text-white text-center">Be a part of politcs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 mb-4">
+                    <div class="card post-categories position-relative">
+                        <img src="post-img-3.jpg" class="card-img-top" alt="Image">
+                        <div class="card-body post-categories-details position-absolute">
+                            <div class="post-categories-text">
+                                <p class="card-text text-white text-center">Let the food be finished</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---Post-Categories end--- -->
+    <!-- ---Blog post area--- -->
+    <section class="blog-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog-left-sidebar">
+                        <div class="row blog-post-item">
+                            <div class="col-md-3">
+                                <div class="blog-info">
+                                    <div class="blog-post-tag  pb-4">
+                                        <a href="#" class="hd-color">Food,</a>
+                                        <a href="#" class="active">Technology,</a>
+                                        <a href="#">Politcs,</a>
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                    <ul class="blog-post-list">
+                                        <li>
+                                            <a href="#">
+                                                Mark wiens
+                                                <i class="far fa-user"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                23 Yan,2021
+                                                <i class="far fa-calendar-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                1.2M Views
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                06 Comment
+                                                <i class="far fa-comment"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card blog-post border-0">
+                                    <img src="post-item-1.jpg" class="card-img-top" alt="Image">
+                                    <div class="card-body post-details pt-3 pb-0 px-0">
+                                        <a href="#">
+                                            <h2 class="card-title">Astronomy Binoculars A Great Alternative</h2>
+                                        </a>
+                                        <p class="card-text">MCSE boot camps have its supporters and its detractors.
+                                            Some people do not understand
+                                            why you should have to spend money on boot camp when you can get the MCSE
+                                            study
+                                            materials yourself at a fraction.</p>
+                                        <a href="#" class="button button-post">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row blog-post-item">
+                            <div class="col-md-3">
+                                <div class="blog-info">
+                                    <div class="blog-post-tag pb-4">
+                                        <a href="#" class="hd-color">Food,</a>
+                                        <a href="#" class="active">Technology,</a>
+                                        <a href="#">Politcs,</a>
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                    <ul class="blog-post-list">
+                                        <li>
+                                            <a href="#">
+                                                Mark wiens
+                                                <i class="far fa-user"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                23 Yan,2021
+                                                <i class="far fa-calendar-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                1.2M Views
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                06 Comment
+                                                <i class="far fa-comment"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card blog-post border-0">
+                                    <img src="post-item-2.jpg" class="card-img-top" alt="Image">
+                                    <div class="card-body post-details pt-3 pb-0 px-0">
+                                        <a href="#">
+                                            <h2 class="card-title">The Basics Of Buying A Telescope</h2>
+                                        </a>
+                                        <p class="card-text">MCSE boot camps have its supporters and its detractors.
+                                            Some people do not understand
+                                            why you should have to spend money on boot camp when you can get the MCSE
+                                            study
+                                            materials yourself at a fraction.</p>
+                                        <a href="#" class="button button-post">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row blog-post-item">
+                            <div class="col-md-3">
+                                <div class="blog-info">
+                                    <div class="blog-post-tag pb-4">
+                                        <a href="#" class="hd-color">Food,</a>
+                                        <a href="#" class="active">Technology,</a>
+                                        <a href="#">Politcs,</a>
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                    <ul class="blog-post-list">
+                                        <li>
+                                            <a href="#">
+                                                Mark wiens
+                                                <i class="far fa-user"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                23 Yan,2021
+                                                <i class="far fa-calendar-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                1.2M Views
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                06 Comment
+                                                <i class="far fa-comment"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card blog-post border-0">
+                                    <img src="post-item-3.jpg" class="card-img-top" alt="Image">
+                                    <div class="card-body post-details pt-3 pb-0 px-0">
+                                        <a href="#">
+                                            <h2 class="card-title">The Glossary Of Telescopes</h2>
+                                        </a>
+                                        <p class="card-text">MCSE boot camps have its supporters and its detractors.
+                                            Some people do not understand
+                                            why you should have to spend money on boot camp when you can get the MCSE
+                                            study
+                                            materials yourself at a fraction.</p>
+                                        <a href="#" class="button button-post">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row blog-post-item">
+                            <div class="col-md-3">
+                                <div class="blog-info">
+                                    <div class="blog-post-tag pb-4">
+                                        <a href="#" class="hd-color">Food,</a>
+                                        <a href="#" class="active">Technology,</a>
+                                        <a href="#">Politcs,</a>
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                    <ul class="blog-post-list">
+                                        <li>
+                                            <a href="#">
+                                                Mark wiens
+                                                <i class="far fa-user"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                23 Yan,2021
+                                                <i class="far fa-calendar-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                1.2M Views
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                06 Comment
+                                                <i class="far fa-comment"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card blog-post border-0">
+                                    <img src="post-item-4.jpg" class="card-img-top" alt="Image">
+                                    <div class="card-body post-details pt-3 pb-0 px-0">
+                                        <a href="#">
+                                            <h2 class="card-title">The Night Sky</h2>
+                                        </a>
+                                        <p class="card-text">MCSE boot camps have its supporters and its detractors.
+                                            Some people do not understand
+                                            why you should have to spend money on boot camp when you can get the MCSE
+                                            study
+                                            materials yourself at a fraction.</p>
+                                        <a href="#" class="button button-post">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row blog-post-item">
+                            <div class="col-md-3">
+                                <div class="blog-info">
+                                    <div class="blog-post-tag pb-4">
+                                        <a href="#" class="hd-color">Food,</a>
+                                        <a href="#" class="active">Technology,</a>
+                                        <a href="#">Politcs,</a>
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                    <ul class="blog-post-list">
+                                        <li>
+                                            <a href="#">
+                                                Mark wiens
+                                                <i class="far fa-user"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                23 Yan,2021
+                                                <i class="far fa-calendar-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                1.2M Views
+                                                <i class="far fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                06 Comment
+                                                <i class="far fa-comment"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card blog-post border-0">
+                                    <img src="post-item-5.jpg" class="card-img-top" alt="Image">
+                                    <div class="card-body post-details pt-3 pb-0 px-0">
+                                        <a href="#">
+                                            <h2 class="card-title">Telescopes 101</h2>
+                                        </a>
+                                        <p class="card-text">MCSE boot camps have its supporters and its detractors.
+                                            Some people do not understand
+                                            why you should have to spend money on boot camp when you can get the MCSE
+                                            study
+                                            materials yourself at a fraction.</p>
+                                        <a href="#" class="button button-post">View More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="blog-pagination" aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link link-item border-0" href="#" aria-label="Previous">
+                                        <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link link-item border-0" href="#">01</a></li>
+                                <li class="page-item active"><a class="page-link link-item border-0" href="#">02</a>
+                                </li>
+                                <li class="page-item"><a class="page-link link-item border-0" href="#">03</a></li>
+                                <li class="page-item"><a class="page-link link-item border-0" href="#">04</a></li>
+                                <li class="page-item"><a class="page-link link-item border-0" href="#">09</a></li>
+                                <li class="page-item">
+                                    <a class="page-link link-item border-0" href="#" aria-label="Next">
+                                        <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-right-sidebar">
+                        <div class="section-sidebar search-area">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-src" placeholder="Search Posts">
+                                <button type="button" class="button-src">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="section-sidebar author-area text-center">
+                            <img src="author-img.jpg" alt="Image" class="author-img rounded-circle">
+                            <h4 class="hd-color">Charlie Barber</h4>
+                            <p class="mb-0">Senior blog writer</p>
+                            <div class="social-icon">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                            </div>
+                            <p class="mb-0">Boot camps have its supporters andit sdetractors. Some people do not
+                                understand why you
+                                should
+                                have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits
+                                detractors.</p>
+                            <hr>
+                        </div>
+                        <div class="section-sidebar popular-post">
+                            <h4 class="headerTitle">Popular Posts</h4>
+                            <div class="media post-item d-flex">
+                                <img class="me-3" src="popular-post-item-1.jpg" alt="Image">
+                                <div class="media-body post-title d-inline-block">
+                                    <h5 class="mt-0 mb-1 hd-color"><a href="#">Space The Final Frontier</a></h5>
+                                    <p class="small">02 Hours Ago</p>
+                                </div>
+                            </div>
+                            <div class="media my-4 post-item">
+                                <img class="me-3" src="popular-post-item-2.jpg" alt="Image">
+                                <div class="media-body post-title d-inline-block">
+                                    <h5 class="mt-0 mb-1 hd-color"><a href="#">The Amazing Hubble</a></h5>
+                                    <p class="small">02 Hours Ago</p>
+                                </div>
+                            </div>
+                            <div class="media post-item d-flex">
+                                <img class="me-3" src="popular-post-item-3.jpg" alt="Image">
+                                <div class="media-body post-title d-inline-block">
+                                    <h5 class="mt-0 mb-1 hd-color"><a href="#">Astronomy Or Astrology</a></h5>
+                                    <p class="small">02 Hours Ago</p>
+                                </div>
+                            </div>
+                            <div class="media mt-4 post-item">
+                                <img class="me-3" src="popular-post-item-4.jpg" alt="Image">
+                                <div class="media-body post-title d-inline-block">
+                                    <h5 class="mt-0 mb-1 hd-color"><a href="#">Asteroids telescope</a></h5>
+                                    <p class="small">02 Hours Ago</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="section-sidebar image-area">
+                            <a href="#"><img class="img-fluid" src="placeholder-img.png"
+                                    alt="Image"></a>
+                            <hr>
+                        </div>
+                        <div class="section-sidebar post-categories-area">
+                            <h4 class="headerTitle">Post Categories</h4>
+                            <ul class="list-categorie">
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Technology</p>
+                                        <p class="mb-0">37</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Lifestyle</p>
+                                        <p class="mb-0">24</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Fashion</p>
+                                        <p class="mb-0">59</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Art</p>
+                                        <p class="mb-0">29</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Food</p>
+                                        <p class="mb-0">15</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Architecture</p>
+                                        <p class="mb-0">09</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex justify-content-between">
+                                        <p class="mb-0">Adventure</p>
+                                        <p class="mb-0">44</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div class="section-sidebar newsletter-area text-center">
+                            <h4 class="headerTitle">Newsletter</h4>
+                            <p>
+                                Here, I focus on a range of items and features that we use in life without giving them a
+                                second thought.
+                            </p>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text input-before">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <input type="email" class="form-control input-contrl" placeholder="Enter email"
+                                        aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text btnSubs">
+                                        <a href="#" class="text-white">Subscribe</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="small">You can unsubscribe at any time</p>
+                            <hr>
+                        </div>
+                        <div class="section-sidebar tag-clouds-area">
+                            <h4 class="headerTitle">Tag Clouds</h4>
+                            <ul class="listTags">
+                                <li class="d-inline-block"><a href="#">Technology</a></li>
+                                <li class="d-inline-block"><a href="#">Fashion</a></li>
+                                <li class="d-inline-block"><a href="#">Architecture</a></li>
+                                <li class="d-inline-block"><a href="#">Fashion</a></li>
+                                <li class="d-inline-block"><a href="#">Food</a></li>
+                                <li class="d-inline-block"><a href="#">Technology</a></li>
+                                <li class="d-inline-block"><a href="#">Lifestyle</a></li>
+                                <li class="d-inline-block"><a href="#">Art</a></li>
+                                <li class="d-inline-block"><a href="#">Adventure</a></li>
+                                <li class="d-inline-block"><a href="#">Food</a></li>
+                                <li class="d-inline-block"><a href="#">Lifestyle</a></li>
+                                <li class="d-inline-block"><a href="#">Adventure</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---Blog post area end--- -->
+    <!-- ---instagram area--- -->
+    <section class="instagram-area position-relative">
+        <div class="container-fluid">
+            <div class="insta-img-area">
+                <div class="row">
+                    <a href="#">
+                        <img src="insta-img-1.jpg" class="img-fluid" alt="Image">
+                    </a>
+                    <a href="#">
+                        <img src="insta-img-2.jpg" class="img-fluid" alt="Image">
+                    </a>
+                    <a href="#">
+                        <img src="insta-img-3.jpg" class="img-fluid" alt="Image">
+                    </a>
+                    <a href="#">
+                        <img src="insta-img-4.jpg" class="img-fluid" alt="Image">
+                    </a>
+                    <a href="#">
+                        <img src="insta-img-5.jpg" class="img-fluid" alt="Image">
+                    </a>
+                    <a href="#">
+                        <img src="Blog/insta-img-6.jpg" class="img-fluid" alt="Image">
+                    </a>
+                </div>
+            </div>
+            <div class="insta-button position-absolute">
+                <a href="blog.html" class="button instaBtn">Follow us on instagram</a>
+            </div>
+        </div>
+    </section>
+    <!-- ---instagram area end--- -->
+    <!-- ---Footer area--- -->
+    <footer class="footer-area ">
+        <div class="container">
+            <div class="row p-tb">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title hd-lg-title text-white">Our Mission</h4>
+                        <p>
+                            So seed seed green that winged cattle in. Gathering thing made fly you're no
+                            divided deep moved us lan Gathering thing us land years living.
+                        </p>
+                        <p>
+                            So seed seed green that winged cattle in. Gathering thing made fly you're no
+                            divided deep moved us lan Gathering thing us land years living.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ps-md-5 mt-2 mt-md-0">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title text-white">Quick Links</h4>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  mt-2 mt-md-0">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title text-white">
+                            Gallery
+                        </h4>
+                        <ul class="img-list">
+                            <li><img src="ftimg1.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg2.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg3.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg4.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg5.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg6.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ps-md-5  mt-2 mt-md-0">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title text-white">Contact Us</h4>
+                        <div class="info">
+                            <h6 class="text-white">
+                                <i class="fas fa-location-arrow"></i>
+                                Head Office
+                            </h6>
+                            <p>123,Main Street,Your City</p>
+                            <h6 class="text-white">
+                                <i class="fas fa-phone"></i>
+                                Phone Number
+                            </h6>
+                            <p class="mb-0">+123 456 7890</p>
+                            <p>+123 456 7890</p>
+                            <h6 class="text-white">
+                                <i class="far fa-envelope"></i>
+                                Email
+                            </h6>
+                            <p class="mb-0">free@infoexample.com</p>
+                            <p class="mb-0">www.infoexample.com</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-12">
+                        <p>Copyright @2021 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ---Footer area end--- -->
+</body>
+
+</html>

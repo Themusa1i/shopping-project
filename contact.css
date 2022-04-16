@@ -1,0 +1,247 @@
+/* Header Nav-menu*/
+.header-area {
+    background-color: #ffffff;
+    position: sticky;
+    padding: 0 15px;
+}
+
+.header-area .logo {
+    color: #090a0c;
+    padding: 0; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.nav-menu .nav-link {
+    font-size: 16px;
+    letter-spacing: 0.035rem;
+    margin-right: 40px;
+    padding: 30px 0 !important;
+    color: #090a0c !important;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 992px){
+    .nav-menu .nav-link{
+        font-size: 15px;
+        padding: 12px 0 !important;
+    }
+    .nav-right{
+        margin-bottom: 45px;
+    }
+}
+
+.nav-menu .nav-link.active,
+.nav-link:hover {
+    color: #384aeb !important;
+}
+
+.nav-right .nav-item {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+.nav-right .nav-item:last-child {
+    margin-left: 25px;
+}
+
+.nav-right i {
+    color: #090a0c;
+}
+
+.nav-right .nav-badge{
+    font-size: 9px;
+    text-align: center;
+    line-height: 10px;
+    padding: 2px 5px 2px 5px;
+    position: absolute;
+    top: -7px;
+    left: 13px;
+}
+
+.nav-right .nav-item .button {
+    display: inline-block;
+    border: 1px solid #384aeb;
+    border-radius: 35px;
+    background: #384aeb;
+    font-weight: 500;
+    padding: 10px 40px;
+    color: #ffffff;
+}
+
+.nav-right .nav-item .button-area {
+    border: 1px solid #c1ccd0d1;
+    border-radius: 35px;
+    background: #ffffff;
+    color: #090a0c;
+}
+
+.header-area .navbar .navToggler:focus{
+    box-shadow: none;
+}
+
+.header-area .navbar .navToggler .icon-bar i{
+    font-size: x-large;
+}
+/* Header Nav menu end */
+
+/* Google map */
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+    .contact-map{
+        height: 420px;
+        margin-bottom: 65px;
+    }
+/* Google map end */
+
+/* Contact area */
+
+.contact-area .contact-info-area span{
+    margin-right: 15px;
+}
+
+.contact-area .contact-info-area span i{
+    font-size: 20px;
+    color: #384aeb;
+}
+
+.contact-area .contact-info-area .contact-info h4{
+    font-size: 18px;
+    font-family: "Oswald",sans-serif;
+    font-weight: 500;
+    color: #090a0c;
+    margin-bottom: 0;
+}
+
+/* Contact form */
+
+.contact-area{
+    padding: 100px 0;
+}
+
+.contact-area form .formGroup{
+    margin-bottom: 13px;
+}
+
+.contact-area form .formGroup .formControl{
+    font-size: 15px;
+    height: 42px;
+    border-radius: 0;
+    border: 1px solid #eee;
+    padding-left: 16px;
+    background: #5f6da91a;
+    box-shadow: none;
+}
+
+.contact-area form .form-group .contact-button{
+    border: 1px solid #384aeb;
+    border-radius: 0;
+    padding: 12px 25px;
+}
+
+/* Contact form end */
+/* Contact area end */
+
+/* Footer */
+
+.footer-area{
+    background: #082550;
+}
+
+.footer-col-details .hd-title{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.footer-col-details .hd-lg-title{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.footer-col-details p{
+    color: #888888e3;
+}
+
+.footer-col-details p:last-child{
+    margin-bottom: 0;
+}
+.footer-col-details .menu li{
+    display: block;
+    margin-bottom: 13px;
+}
+
+.footer-col-details .menu li:not(:last-child){
+    margin-bottom: 13px;
+}
+
+.footer-col-details .menu li a{
+    color: #888888e3;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    transition: all .5s ease;
+}
+
+.footer-col-details .menu li a:hover{
+    color: #384aeb;
+}
+
+.footer-col-details .img-list li{
+    float: left;
+    margin: 5px;
+}
+
+.footer-col-details .info{
+    margin-left: 35px;
+}
+
+.info h6{
+    margin-left:-40px!important;
+    margin-bottom: 0;
+}
+
+.info i{
+    width: 28px;
+    height: 28px;
+    background: #384aeb;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.info p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-area .p-tb{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-bottom p{
+    margin-bottom: 0;
+}
+
+.footer-bottom{
+    padding: 30px;
+    background: #000746;
+}
+
+/* Footer end  */

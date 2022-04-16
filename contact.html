@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/557ac422ea.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Shopping_web_site</title>
+</head>
+
+<body>
+    <!-- ---Header area--- -->
+    <header class="header-area header-sticky">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">Shopping</a>
+                <button class="navbar-toggler navToggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars icon-bar"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto nav-menu">
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="pages.html">Pages</a>
+                        </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav-right">
+                        <li class="nav-item">
+                            <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="icon-shop-cart"><i class="fas fa-shopping-cart"
+                                    style="    transform: rotateY(150deg);"></i></a>
+                            <span class="badge rounded-pill bg-primary nav-badge">3</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="button button-area">Buy Now</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ---Header area end--- -->
+    <!-- ---Banner area--- -->
+    <section class="banner-page">
+        <div class="container position-relative">
+            <div class="banner-title text-center p-tb ">
+                <h1 class="hd-color">Contact Us</h1>
+                <p><a href="index.html">Home</a></p>
+                <span>-</span><span>Contact Us</span>
+            </div>
+        </div>
+    </section>
+    <!-- ---Banner area end--- -->
+    <!-- ---Contact area--- -->
+    <section class="contact-area">
+        <div class="container">
+            <!-- ---Google map--- -->
+            <div id="map-container-google-1" class="z-depth-1-half map-container contact-map">
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <!-- ---Google map end--- -->
+            <!-- ---Contact form--- -->
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="media d-flex contact-info-area">
+                        <span class="info-icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <div class="media-body contact-info">
+                            <h4>California United States</h4>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+                    <div class="media d-flex contact-info-area">
+                        <span class="info-icon">
+                            <i class="fas fa-headphones-alt"></i>
+                        </span>
+                        <div class="media-body contact-info">
+                            <h4>00 (440) 9865 562</h4>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="media d-flex contact-info-area">
+                        <span class="info-icon">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                        <div class="media-body contact-info">
+                            <h4>support@example.com</h4>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 ">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="form-group formGroup">
+                                    <input type="text" name="name" id="name" class="form-control formControl"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="form-group formGroup">
+                                    <input type="text" name="email" id="email" class="form-control formControl"
+                                        placeholder="Enter email address">
+                                </div>
+                                <div class="form-group formGroup">
+                                    <input type="text" name="subcject" id="subcject" class="form-control formControl"
+                                        placeholder="Enter Subcject">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="form-group formGroup">
+                                    <textarea name="message" id="message" cols="30" rows="6"
+                                        class="form-control formControl" placeholder="Enter Message"
+                                        style="height: 100%; resize: vertical; overflow: auto;">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-end mt-3">
+                            <button type="button" class="button contact-button">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- ---Contact form end--- -->
+        </div>
+    </section>
+    <!-- ---Contact area end--- -->
+    <!-- ---Footer area--- -->
+    <footer class="footer-area ">
+        <div class="container">
+            <div class="row p-tb">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title hd-lg-title text-white">Our Mission</h4>
+                        <p>
+                            So seed seed green that winged cattle in. Gathering thing made fly you're no
+                            divided deep moved us lan Gathering thing us land years living.
+                        </p>
+                        <p>
+                            So seed seed green that winged cattle in. Gathering thing made fly you're no
+                            divided deep moved us lan Gathering thing us land years living.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ps-md-5 mt-2 mt-md-0">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title text-white">Quick Links</h4>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3  mt-2 mt-md-0">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title text-white">
+                            Gallery
+                        </h4>
+                        <ul class="img-list">
+                            <li><img src="ftimg1.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg2.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg3.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg4.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg5.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                            <li><img src="ftimg6.jpg" alt="Image" style="width: 72px; height: 72px;">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 ps-md-5  mt-2 mt-md-0">
+                    <div class="footer-col-details">
+                        <h4 class="hd-title text-white">Contact Us</h4>
+                        <div class="info">
+                            <h6 class="text-white">
+                                <i class="fas fa-location-arrow"></i>
+                                Head Office
+                            </h6>
+                            <p>123,Main Street,Your City</p>
+                            <h6 class="text-white">
+                                <i class="fas fa-phone"></i>
+                                Phone Number
+                            </h6>
+                            <p class="mb-0">+123 456 7890</p>
+                            <p>+123 456 7890</p>
+                            <h6 class="text-white">
+                                <i class="far fa-envelope"></i>
+                                Email
+                            </h6>
+                            <p class="mb-0">free@infoexample.com</p>
+                            <p class="mb-0">www.infoexample.com</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-12">
+                        <p>Copyright @2021 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ---Footer area end--- -->
+</body>
+
+</html>
