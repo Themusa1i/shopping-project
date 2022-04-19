@@ -1,0 +1,519 @@
+/* Header Nav-menu*/
+
+.header-area {
+    background-color: #ffffff;
+    position: sticky;
+    padding: 0 15px;
+}
+
+.header-area .logo {
+    color: #090a0c;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.nav-menu .nav-link {
+    font-size: 16px;
+    letter-spacing: 0.035rem;
+    margin-right: 40px;
+    padding: 30px 0 !important;
+    color: #090a0c !important;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-menu .nav-link {
+        font-size: 15px;
+        padding: 12px 0 !important;
+    }
+
+    .nav-right {
+        margin-bottom: 45px;
+    }
+}
+
+.nav-menu .nav-link.active,
+.nav-link:hover {
+    color: #384aeb !important;
+}
+
+.nav-right .nav-item {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+.nav-right .nav-item:last-child {
+    margin-left: 25px;
+}
+
+.nav-right i {
+    color: #090a0c;
+}
+
+.nav-right .nav-badge {
+    font-size: 9px;
+    text-align: center;
+    line-height: 10px;
+    padding: 2px 5px 2px 5px;
+    position: absolute;
+    top: -7px;
+    left: 13px;
+}
+
+.nav-right .nav-item .button {
+    display: inline-block;
+    border: 1px solid #384aeb;
+    border-radius: 35px;
+    background: #384aeb;
+    font-weight: 500;
+    padding: 10px 40px;
+    color: #ffffff;
+}
+
+.nav-right .nav-item .button-area {
+    border: 1px solid #c1ccd0d1;
+    border-radius: 35px;
+    background: #ffffff;
+    color: #090a0c;
+}
+
+.header-area .navbar .navToggler:focus {
+    box-shadow: none;
+}
+
+.header-area .navbar .navToggler .icon-bar i {
+    font-size: x-large;
+}
+
+/* Header Nav-menu end*/
+
+/* ---Banner--- */
+
+.banner-area {
+    background: #f5f6f7;
+    position: relative;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pt-60px {
+    padding-top: 60px;
+}
+
+.banner-area::before {
+    content: "";
+    display: block;
+    width: 450px;
+    height: 100%;
+    background: #384aeb;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 1060px) {
+    .banner-area::before {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-area::before {
+        display: block !important;
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .banner-area::before {
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .banner-area .banner-content .hd-md-35px {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-area .banner-content .hd-sm-25px {
+        font-size: 25px;
+    }
+
+    .banner-content {
+        margin-bottom: 15px;
+    }
+}
+
+.banner-area .banner-img {
+    position: relative;
+}
+
+.banner-content {
+    max-width: 490px;
+}
+
+.banner-area .banner-content h4 {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #555555;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.banner-area .banner-content h1 {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #090a0c;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+.banner-area .banner-content .button {
+    display: inline-block;
+    border: 1px solid #384aeb;
+    border-radius: 35px;
+    background: #384aeb;
+    font-weight: 500;
+    padding: 13px 40px;
+    color: #ffffff;
+}
+
+
+.banner-area .banner-content p {
+    margin-bottom: 35px;
+}
+
+/* ---Banner-end--- */
+
+/* Scale-product */
+
+.section .product {
+    position: relative;
+    overflow: hidden;
+}
+
+.section .product .card-img-box img {
+    width: 100%;
+}
+
+.card-img-box img {
+    transform: scale(1);
+    transition: ease all .35s;
+}
+
+.product:hover .card-img-box img {
+    transform: scale(1.1);
+}
+
+/* Scale-product-end */
+
+/* Shop-Product */
+
+.section-title.pb-50px {
+    padding-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 14px;
+    margin-bottom: 3px;
+    line-height: 1.7;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.section-title h2 span {
+    border-bottom: 2px solid #384aeb;
+    padding-bottom: 10px;
+}
+
+.hd-color {
+    color: #090a0c;
+}
+
+.card-product {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.card-product p {
+    margin: 0;
+}
+
+.card-product h4 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    line-height: 1.4;
+}
+
+.card-product .product-price {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image ul li {
+    display: inline-block;
+    margin-right: 5.5px;
+}
+
+.product-image ul li:last-child {
+    margin-right: 0;
+}
+
+
+.product-image .btn {
+    background: #80acef;
+    border: 0;
+    border-radius: 0;
+}
+
+.product-image .btn:hover {
+    background: #384aeb;
+}
+
+.card-product i {
+    color: #ffffff !important;
+    font-size: 14px;
+}
+
+.product-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 30px 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .50s ease;
+}
+
+.card-product:hover .product-overlay {
+    opacity: 1;
+}
+
+/* Shop-product-end */
+
+/* Campaing */
+
+.section-campaing {
+    background-image: url(../images/Home/campaing.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.campaing-title h3 {
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.campaing-title h4 {
+    font-size: 25px;
+}
+
+.campaing-title .button {
+    display: inline-block;
+    border: 1px solid #384aeb;
+    border-radius: 35px;
+    background: #384aeb;
+    padding: 13px 45px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.p-tb-75px {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Campaing-end */
+
+/* Best-Sellers */
+
+.pt-100px {
+    padding-top: 100px;
+}
+
+.padding {
+    padding: 25px 25px 25px 0;
+}
+
+.card-blog {
+    border: none;
+    border-radius: 0;
+}
+
+.card-body .card-info {
+    margin-bottom: 10px;
+}
+
+.card-body .card-info span {
+    font-size: 14px;
+}
+
+.card-body .card-info li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.card-body .card-info .fa-commenting-o {
+    margin-right: 8px;
+}
+
+.card-body .card-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card-body .read {
+    font-weight: 500;
+}
+
+/* Best-Sellers-end */
+
+/* Subscribe */
+
+.subscribe-page {
+    position: relative;
+    background: #ffffff;
+    top: 100px;
+    bottom: 0;
+}
+
+.subscribe-page h3 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+.subscribe-input {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    padding: 13px 0 13px 20px;
+    border-radius: 35px;
+    box-shadow: none;
+}
+
+
+form button {
+    display: inline-block;
+    border: 1px solid #384aeb;
+    border-radius: 35px;
+    padding: 13px 35px;
+    background: #384aeb;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+/* Subscribe-end */
+
+/* Footer */
+
+.footer-area {
+    background: #082550;
+}
+
+.footer-col-details .hd-title {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.footer-col-details .hd-lg-title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.footer-col-details p {
+    color: #888888e3;
+}
+
+.footer-col-details p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-col-details .menu li {
+    display: block;
+    margin-bottom: 13px;
+}
+
+.footer-col-details .menu li:not(:last-child) {
+    margin-bottom: 13px;
+}
+
+.footer-col-details .menu li a {
+    color: #888888e3;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    transition: all .5s ease;
+}
+
+.footer-col-details .menu li a:hover {
+    color: #384aeb;
+}
+
+.footer-col-details .img-list li {
+    float: left;
+    margin: 5px;
+}
+
+.footer-col-details .info {
+    margin-left: 35px;
+}
+
+.info h6 {
+    margin-left: -40px !important;
+    margin-bottom: 0;
+}
+
+.info i {
+    width: 28px;
+    height: 28px;
+    background: #384aeb;
+    text-align: center;
+    line-height: 28px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.info p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-area .p-tb {
+    padding-top: 200px;
+    padding-bottom: 120px;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+}
+
+.footer-bottom {
+    padding: 30px;
+    background: #000746;
+}
