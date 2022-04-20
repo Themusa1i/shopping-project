@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    outline: none!important;
+}
+
+input:focus{
+    border-color: #ced4da!important;
+    box-shadow: none!important;
+}
+
+button:focus{
+    box-shadow: none!important;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #777;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none !important;
+    color: #090a0c;
+}
+
+a.active{
+    color: #384aeb;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.hd-color {
+    color: #090a0c;
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #090a0c;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+h3{
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+h4{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #555555;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.button{
+    display: inline-block;
+    border: 1px solid #384aeb;
+    border-radius: 35px;
+    background: #384aeb;
+    font-weight: 500;
+    padding: 13px 40px;
+    color: #ffffff;
+}
+
+
+.pt-60px {
+    padding-top: 60px;
+}
+
+.p-tb-75px {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.pt-100px {
+    padding-top: 100px;
+}
+
+.padding{
+    padding: 25px 25px 25px 0;
+}
+
+.p-tb{
+    padding: 150px 0;
+}
+
+.banner-page{
+    position: relative;
+    background: #f5f6f7;
+    height: 100%;
+}
+
+.banner-title h1{
+    font-size: 36px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.banner-title p{
+    display: inline-block;
+}
+
+.banner-title p a{
+    color: #777;
+    font-family: "Roboto",sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red !important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: red !important;
+  }
