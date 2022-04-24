@@ -13,7 +13,7 @@
          <div class="col-12 col-md-4 col-lg-3 test1">
           <div class="card text-center card-product">
               <div class="product-image">
-                  <img class="card-img-top" id="Trending" src="assets/images/Home/${getlocal[i].photo}" alt="Card image cap" >
+                  <img class="card-img-top" id="Trending" src="assets/images/Home/${getlocal[Math.floor(Math.random()*getlocal.length)].photo}" alt="Card image cap" >
                   <ul class="product-overlay">
                       <li>
                           <a href="#" class="icon-search btn">
