@@ -1,13 +1,13 @@
 
   getlocastorage()
-  
+
 
   function getlocastorage() {
-      var getlocal=JSON.parse(localStorage.getItem('data'));
+      const getlocal = JSON.parse(localStorage.getItem('data'));
       console.log(getlocal[0].photo)
       
         for(let i = 0; i<8;i++){
-          const test1 = document.getElementById('Trending');
+          const test1 = document.getElementById('Trending-Row');
           console.log(getlocal[i].photo);
          const html = `
          <div class="col-12 col-md-4 col-lg-3 test1">
@@ -42,15 +42,14 @@
 
           </div>
         </div>
-    
          `
-         test1.insertAdjacentHTML("beforebegin", html);
+         test1.insertAdjacentHTML("beforeend", html);
 
         }
-      
-        
 
-       
+
+
+
 
   }
     
