@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -10,12 +11,13 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
     <script src="https://kit.fontawesome.com/557ac422ea.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap"
         rel="stylesheet">
     <title>Shopping_web_site</title>
+
 </head>
 
 <body>
@@ -54,8 +56,9 @@
                         </li>
                         <li class="nav-item">
                             <a href="#" class="icon-shop-cart"><i class="fas fa-shopping-cart"
-                                    style="    transform: rotateY(150deg);"></i></a>
-                            <span class="badge rounded-pill bg-primary nav-badge">3</span>
+                                    style="    transform: rotateY(150deg);"></i>
+                                <span class="badge rounded-pill bg-primary nav-badge">3</span>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="button button-area">Buy Now</a>
@@ -71,53 +74,137 @@
     <section class="banner-page">
         <div class="container position-relative">
             <div class="banner-title text-center p-tb ">
-                <h1 class="hd-color">Login / Register</h1>
+                <h1 class="hd-color">Shopping Cart</h1>
                 <p><a href="index.html">Home</a></p>
-                <span>-</span><span>Login/Register</span>
+                <span> - </span><span>Shopping Cart</span>
             </div>
         </div>
     </section>
     <!-- ---Banner area end--- -->
-    <!-- ---Login area--- -->
-    <section class="login-area">
+    <!-- ---Cart area--- -->
+    <section class="cart-area pt-100px">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="login-bg position-relative">
-                        <div class="title">
-                            <h4>New to our website?</h4>
-                            <p class="text-white mb-4 w-75 m-auto">There are advances being made in science and
-                                technology everyday,
-                                and a good example of
-                                this
-                                is the</p>
-                            <a href="register.html" class="button btnLogin">Create an Account</a>
+            <div class="cart-inner pb-5">
+                <div class="row cart-header">
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pdg">
+                                        <div class="media d-flex">
+                                            <img src="assets/images/Cart/img.jpg" alt="" class="me-4"
+                                                style="width: 80px; height: 80px;">
+                                            <div class="media-body">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur
+                                                    adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pdg">
+                                        $220.00
+                                    </td>
+                                    <td class="pdg">
+                                        <div class="m-0">
+                                            <input type="number" class="form-control product-count" maxlength="10" value="1"
+                                                id="qty" style="width: 76px;">
+                                        </div>
+                                    </td>
+                                    <td class="pdg">
+                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                                    </td>
+                                    <td class="pdg fw-bold">$2250</td>
+                                </tr>
+                                <tr>
+                                    <td class="pdg">
+                                        <div class="media d-flex">
+                                            <img src="assets/images/Cart/img.jpg" alt="" class="me-4"
+                                                style="width: 80px; height: 80px;">
+                                            <div class="media-body">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur
+                                                    adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pdg">
+                                        $220.00
+                                    </td>
+                                    <td class="pdg">
+                                        <div class="m-0">
+                                            <input type="number" class="form-control product-count" maxlength="10" value="1"
+                                                id="qty" style="width: 76px;">
+                                        </div>
+                                    </td>
+                                    <td class="pdg">
+                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                                    </td>
+                                    <td class="pdg fw-bold">$2250</td>
+                                </tr>
+                                <tr>
+                                    <td class="pdg">
+                                        <div class="media d-flex">
+                                            <img src="assets/images/Cart/img.jpg" alt="" class="me-4"
+                                                style="width: 80px; height: 80px;">
+                                            <div class="media-body">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur
+                                                    adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pdg">
+                                        $220.00
+                                    </td>
+                                    <td class="pdg">
+                                        <div class="m-0">
+                                            <input type="number" class="form-control product-count" maxlength="10" value="1"
+                                                id="qty" style="width: 76px;">
+                                        </div>
+                                    </td>
+                                    <td class="pdg">
+                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                                    </td>
+                                    <td class="pdg fw-bold">$2250</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="cart-foot">
+                    <div class="row">
+                        <div class="col-9 ">
+                        </div>
+                        <div class="col-2 text-dark">
+                            <p>Subtotal</p>
+                            <p>Tax(5%)</p>
+                            <p>Shipping</p>
+                            <p>Grand Total</p>
+                        </div>
+                        <div class="col-1 text-dark fw-bold">
+                            <p>$20.04</p>
+                            <p>$4.52</p>
+                            <p>$47.00</p>
+                            <p>$13.00</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="login-form shadow-lg position-relative">
-                        <div class="title">
-                            <h3>Log in to enter</h3>
-                            <form action="" class="form-group loginForm">
-                                <input type="text" placeholder="Username" class="form-control login-form-control mb-4">
-                                <input type="text" placeholder="Password" class="form-control login-form-control mb-4">
-                                <div class="selected text-left mb-4">
-                                    <input type="checkbox" id="s-text" name="select">
-                                    <label for="s-text">Keep me logged in</label>
-                                </div>
-                                <button type="button" class="button btnLogin w-100">Log In</button>
-                                <a href="#" class="mt-4">Forgot password?</a>
-                            </form>
-                        </div>
+                <div class="chkt-btn float-end mt-2">
+                    <div>
+                        <button type="button" class="btn btn-success btn-lg py-1 bg-hover">Checkout</button>
                     </div>
+
                 </div>
             </div>
         </div>
-        </div>
-
     </section>
-    <!-- ---Login area end--- -->
+    <!-- ---Cart area end--- -->
     <!-- ---Footer area--- -->
     <footer class="footer-area ">
         <div class="container">

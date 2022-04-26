@@ -12,6 +12,15 @@ body {
     outline: none!important;
 }
 
+input:focus{
+    border-color: #ced4da!important;
+    box-shadow: none!important;
+}
+
+button:focus{
+    box-shadow: none!important;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
@@ -37,7 +46,7 @@ ul {
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .hd-color {
@@ -82,7 +91,6 @@ h4{
     border: 1px solid #384aeb;
     border-radius: 35px;
     background: #384aeb;
-    white-space: nowrap;
     font-weight: 500;
     padding: 13px 40px;
     color: #ffffff;
@@ -133,16 +141,14 @@ h4{
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #bebcbc !important;
+    color: red !important;
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #bebcbc !important;
+    color: red !important;
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #bebcbc !important;
+    color: red !important;
   }
-
-  
