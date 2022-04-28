@@ -104,6 +104,44 @@
 .cart-area .cart-inner .chkt-btn .bg-hover:hover{
     background-color: #21C916;
 }
+/* Dropdown cart */
+.tl-tip .dropdown-cart{
+    width: 350px;
+    position: absolute;
+    margin: 10px;
+    box-shadow: 0 0.125rem 0.125rem 0.125rem rgb(0,0,0,.075)!important;
+    visibility:hidden;
+    transition: all .1s ease;
+}
+
+.tl-tip .dropdown-right{
+    right: -10px;
+}
+
+.tl-tip .dropdown-cart .fs-14{
+    font-size: 14px;
+}
+.tl-tip .dropdown-cart .fs-14:last-child{
+    font-weight: 500;
+}
+
+.tl-tip:hover .dropdown-cart{
+    visibility: visible;
+}
+.tl-tip .dropdown-cart::after{
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(192,192,192,0.75) transparent;
+    top: -16px;
+    right: 0;
+    
+}
+.tl-tip .dropdown-cart .card:hover{
+    background-color: #f5f6f7;
+}
+/* Dropdown cart end */
 /* Cart area end */
 /* Footer */
 
