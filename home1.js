@@ -59,4 +59,17 @@ function save_to_cart(products) {
 }
 
 
-   
+displayfun()
+
+
+function displayfun() { 
+    
+    mesageagain.classList.add('show')
+    mesageagain.style.display='block'
+
+    setTimeout(function () {
+        mesageagain.style.display='none'
+    }, 2000)
+
+
+}

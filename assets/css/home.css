@@ -516,3 +516,21 @@ form button {
     background: #000746;
 }
 
+#message { 
+    background-color: teal;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out;
+    display: none;
+    color: white;
+    position: absolute;
+    width: auto;
+    height: 50px;
+    line-height: 50px;    
+}
+
+#message.show {
+    transform: translateY(-80px);
+}

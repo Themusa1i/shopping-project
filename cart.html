@@ -57,7 +57,7 @@
                         <li class="nav-item">
                             <a href="#" class="icon-shop-cart"><i class="fas fa-shopping-cart"
                                     style="    transform: rotateY(150deg);"></i>
-                                <span class="badge rounded-pill bg-primary nav-badge">3</span>
+                                <span class="badge rounded-pill bg-primary nav-badge" id="cart-shop">3</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -97,88 +97,17 @@
                                     <th scope="col">Total</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="pdg">
-                                        <div class="media d-flex">
-                                            <img src="assets/images/Cart/img.jpg" alt="" class="me-4"
-                                                style="width: 80px; height: 80px;">
-                                            <div class="media-body">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur
-                                                    adipisicing elit.</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="pdg">
-                                        $220.00
-                                    </td>
-                                    <td class="pdg">
-                                        <div class="m-0">
-                                            <input type="number" class="form-control product-count" maxlength="10" value="1"
-                                                id="qty" style="width: 76px;">
-                                        </div>
-                                    </td>
-                                    <td class="pdg">
-                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
-                                    </td>
-                                    <td class="pdg fw-bold">$2250</td>
-                                </tr>
-                                <tr>
-                                    <td class="pdg">
-                                        <div class="media d-flex">
-                                            <img src="assets/images/Cart/img.jpg" alt="" class="me-4"
-                                                style="width: 80px; height: 80px;">
-                                            <div class="media-body">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur
-                                                    adipisicing elit.</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="pdg">
-                                        $220.00
-                                    </td>
-                                    <td class="pdg">
-                                        <div class="m-0">
-                                            <input type="number" class="form-control product-count" maxlength="10" value="1"
-                                                id="qty" style="width: 76px;">
-                                        </div>
-                                    </td>
-                                    <td class="pdg">
-                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
-                                    </td>
-                                    <td class="pdg fw-bold">$2250</td>
-                                </tr>
-                                <tr>
-                                    <td class="pdg">
-                                        <div class="media d-flex">
-                                            <img src="assets/images/Cart/img.jpg" alt="" class="me-4"
-                                                style="width: 80px; height: 80px;">
-                                            <div class="media-body">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit amet consectetur
-                                                    adipisicing elit.</p>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="pdg">
-                                        $220.00
-                                    </td>
-                                    <td class="pdg">
-                                        <div class="m-0">
-                                            <input type="number" class="form-control product-count" maxlength="10" value="1"
-                                                id="qty" style="width: 76px;">
-                                        </div>
-                                    </td>
-                                    <td class="pdg">
-                                        <button type="button" class="btn btn-danger btn-sm">Remove</button>
-                                    </td>
-                                    <td class="pdg fw-bold">$2250</td>
-                                </tr>
+                            <tbody class="parentTR">
+                               
+                                
+                               
                             </tbody>
                         </table>
+                        <div id="removemesage" class="">product removed</div>
                     </div>
                 </div>
-                <div class="cart-foot">
-                    <div class="row">
+                <div class="cart-foot" id="tax">
+                    <!-- <div class="row">
                         <div class="col-9 ">
                         </div>
                         <div class="col-2 text-dark">
@@ -193,7 +122,7 @@
                             <p>$47.00</p>
                             <p>$13.00</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="chkt-btn float-end mt-2">
                     <div>
@@ -294,6 +223,7 @@
         </div>
     </footer>
     <!-- ---Footer area end--- -->
+    <script src="cart.js"></script>
 </body>
 
 </html>

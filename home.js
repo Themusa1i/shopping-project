@@ -1,16 +1,14 @@
+getlocastorage() 
 
-  getlocastorage()
-  click()
 
- 
+const mesageagain = document.getElementById('message')
+console.log(mesageagain)
   
-  function products() {
+function products() {
     return JSON.parse(localStorage.getItem('data')) || []; // 1-ci varsa 1-cini yoxdusa ikincini gosterecey
-}
-  
-   
+}   
 
-  function getlocastorage() {
+function getlocastorage() {
       const getlocal = products();
       console.log(getlocal[0].photo)
       
@@ -59,16 +57,11 @@
         }
            
         
-       
-
-      
-          
-
-        for(let i=0;i<1;i++){
-          const row = document.getElementById('row-one');
+        for(let i=0;i<3;i++){
+          const row = document.getElementById('row2');
           let item = getlocal[Math.floor(Math.random()*getlocal.length)];
           console.log(item.photo);
-          var html1=` <div class="row">
+          var html1=`
           <div class="col-lg-4 col-md-6 mb-2 mb-lg-0 px-1">
               <div class="card product">
                   <div class="card-img-box">
@@ -76,32 +69,52 @@
                           img-responsive>
                   </div>
               </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-2 mb-lg-0 px-1">
-              <div class="card product">
-                  <div class="card-img-box">
-                      <img src="assets/images/Home/${item.photo}" alt="Image" class="img-responsive"
-                          img-responsive>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-2 mb-lg-0 px-1">
-              <div class="card product">
-                  <div class="card-img-box">
-                      <img src="assets/images/Home/${item.photo}" alt="Image" class="img-responsive"
-                          img-responsive>
-                  </div>
-              </div>
-          </div>
-      </div> `
+          </div> `
       row.insertAdjacentHTML('beforeend',html1);
+  }
+
+  for(let i=0;i<4;i++) {
+      var test4=document.getElementById('bestseller');
+      let item = getlocal[Math.floor(Math.random()*getlocal.length)];
+      var html3=`<div class="col-12 col-md-4 col-lg-3">
+      <div class="card text-center card-product">
+          <div class="product-image">
+              <img class="card-img-top" src="assets/images/Home/${item.photo}" alt="Card image cap">
+              <ul class="product-overlay">
+                  <li>
+                      <a href="#" class="icon-search btn">
+                          <i class="fas fa-search"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="icon-shop-cart btn click" onclick="add_to_cart(${item.id})">
+                          <i class="fas fa-shopping-cart" style="transform: rotateY(150deg);"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" class="icon-heart btn">
+                          <i class="far fa-heart"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="card-body">
+              <p>${item.title}</p>
+              <h4 class="card-title hd-color">
+                  <a href="#">${item.title}</a>
+              </h4>
+              <p class="card-text product-price">${item.price}$</p>
+          </div>
+      </div>
+  </div>`
+
+  test4.insertAdjacentHTML('beforeend',html3)
+
+
   }
 
 
 }
-
-
-
 
 function add_to_cart(id) {
    
@@ -147,32 +160,33 @@ function add_to_cart(id) {
     console.log(product);
 }
 
-
 function basket_products() {
     return JSON.parse(localStorage.getItem('basket')) || [];
 }
 
 function save_to_cart(products) {
     localStorage.setItem('basket', JSON.stringify(products));
-  
+    updateCardCount(); 
+    displayfun(); 
 }
 
 
-
-function click(){
-    var x=basket_products()
-    var y=x.length
-    
-        
-    var cc=document.getElementById('fas');
-   
-   
-    var html3=`<span id="nav-item" class="badge rounded-pill bg-primary nav-badge cart_index">${y}</span>`
-    
-    cc.insertAdjacentHTML('afterend',html3);
-
-
+function updateCardCount() {  
+    document.getElementById('cardCount').innerText = basket_products().length;
 }
+
+updateCardCount()
+
+
+function displayfun() { 
+    mesageagain.style.display='block'
+    
+    setTimeout(function () {
+        mesageagain.style.display='none'
+    }, 3000)
+}
+
+
 
    
       

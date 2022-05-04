@@ -195,3 +195,24 @@
 }
 
 /* Footer end  */
+
+#removemesage{
+    width: 200px;
+    height: 50px;
+border-radius: 5px ;
+font-size: 20px ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: teal;
+color: #ffffff;
+justify-content: center;
+align-items: center;
+padding: 5px;
+position: absolute;
+right: 5px;
+bottom: 20px;
+display: none;
+
+} 
+ 
+
+
