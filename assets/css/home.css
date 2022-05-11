@@ -531,6 +531,4 @@ form button {
     line-height: 50px;    
 }
 
-#message.show {
-    transform: translateY(-80px);
-}
+

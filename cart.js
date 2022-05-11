@@ -27,46 +27,35 @@ function getlocastorage() {
               </td>
               <td class="pdg">
                   <div class="m-0">
-                      <input type="number" class="form-control product-count" onchange="mychange()"  maxlength="10" value="${getlocal[i].count}"
-                          id="qty" style="width: 76px;">
+
+                      <input type="number" class="form-control product-count  inputchange"  onchange="mychange(this,${getlocal[i].id})"  maxlength="10" minlength="1" value="${getlocal[i].count}"
+                           style="width: 76px;">
                   </div>
               </td>
               <td class="pdg">
                   <button type="button" class="btn btn-danger btn-sm" onclick="lsdel('basket',${getlocal[i].id})">Remove</button>
               </td>
-              <td class="pdg fw-bold" id="headtotal">${total}</td>
+              <td class="pdg fw-bold headtotal_${getlocal[i].id}">${total}</td>
           </tr>`
           x.insertAdjacentHTML('beforeend',html)
           }
-          let sumprice = 0; for (let i = 0; 
-            i < getlocal. length; i++) { sumprice += getlocal[i].price; } 
-            console. log(sumprice)
+ }
 
-          for(let i=0;i<1;i++) {
-          var tax = document.getElementById('tax')
-          var tax2=sumprice * 0.05;
-          var grandtotal = sumprice-tax2;
+calculate_totals();
 
-              var html1=`  <div class="row" >
-                        <div class="col-9 ">
-                        </div>
-                        <div class="col-2 text-dark">
-                            <p>Subtotal</p>
-                            <p>Tax(5%)</p>
-                            <p>Grand Total</p>
-                        </div>
-                        <div class="col-1 text-dark fw-bold">
-                            <p>${sumprice}$</p>
-                            <p>${tax2}$</p>
-                            <p>${grandtotal}$</p>
-                        </div>
-                    </div>`
-                    tax.insertAdjacentHTML('beforeend',html1)
+function calculate_totals() {
+    const products = basket_products(); 
 
-          }
-        
-         
+    const subtotal =  products.reduce((cal, item) => cal + item.price * item.count, 0).toFixed(2);
 
+    const tax =  products.reduce((cal, item) => {
+        let total = item.price * item.count;
+        return cal + (total * item.discount) / 100;
+    }, 0).toFixed(2);
+
+    document.getElementById('subtotal').innerHTML = subtotal;
+    document.getElementById('taxx').innerHTML = tax;
+    document.getElementById('grand').innerHTML = (subtotal - tax).toFixed(2);    
 }
 
 
@@ -99,7 +88,8 @@ function lsdel(storage_name, id) {
         el[0].remove();
 
         updateCardCount();
-        displayfun()
+        displayfun();
+        calculate_totals();
     }   
 }  
 var mesageagain=document.getElementById('removemesage');
@@ -114,17 +104,48 @@ function displayfun() {
 }
 
 
+// my change function
 
-var inputchange=document.getElementById("qty")
 
+ function mychange(element, id) { 
+    var getlocal = basket_products();
+    var inputvalue = element.value
 
-function mychange() {
-
-  var  getlocal=basket_products();
-
-    for(let i = 0; i<getlocal.length;i++){
-       var sum = inputchange.value* getlocal[i].price
-      var headtotal =  document.getElementById('headtotal').innerHTML=sum
+    if (inputvalue < 1) {
+        inputvalue = element.value = 1;
     }
-    
+
+    const product = getlocal.find(item =>  item.id == id);
+    var sum = product.price * inputvalue;
+    var headtotal =  document.querySelector('.headtotal_' + id);
+    headtotal.innerHTML = sum.toFixed(2);
+
+    const index = getlocal.findIndex(item => item.id == id);
+    getlocal[index].count = inputvalue;
+    sevaDb(getlocal);
+    calculate_totals();
 }
+
+
+function sevaDb(data) {
+    localStorage.setItem('basket', JSON.stringify(data));
+} 
+
+ 
+var check=document.getElementById("check");
+
+check.addEventListener('click',function () {
+    var mesage2=document.querySelector('.endmesage');
+
+    mesage2.style.display="block";
+
+    setTimeout(function () {
+
+        mesage2.style.display="none"
+
+    },5000)
+});
+
+   
+
+        
