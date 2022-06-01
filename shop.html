@@ -46,6 +46,9 @@
                         <li class="nav-item go-to-section">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
+                        <li class="nav-item go-to-section">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
                     </ul>
 
                     <ul class="nav-right">
@@ -55,7 +58,7 @@
                         <li class="nav-item">
                             <a href="#" class="icon-shop-cart"><i class="fas fa-shopping-cart"
                                     style="    transform: rotateY(150deg);"></i></a>
-                            <span class="badge rounded-pill bg-primary nav-badge">3</span>
+                            <span class="badge rounded-pill bg-primary nav-badge" id="countadd"> </span>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="button button-area">Buy Now</a>
@@ -87,6 +90,18 @@
                         <div class="common-filter">
                             <form action="#">
                                 <ul>
+                                    <li class="filters-list">
+                                        <input type="number" name="minPrice" id="minPrice" onchange="setProductsToHtml()">
+                                        <label for="minPrice">
+                                            min Price
+                                        </label>
+                                     </li>
+                                     <li class="filters-list">
+                                        <input type="number" name="maxPrice" id="maxPrice" onchange="setProductsToHtml()">
+                                        <label for="maxPrice">
+                                            max Price
+                                        </label>
+                                     </li>
                                     <li class="filters-list">
                                         <input class="select-radio" type="radio" name="brand" id="men">
                                         <label for="men">
@@ -241,8 +256,9 @@
                     <!-- ---Top Bar area--- -->
                     <div class="col-12 top-bar">
                         <div class="assorts">
-                            <select class="assort-details">
-                                <option class="assort" value="1">Default sorting</option>
+                            <select class="assort-details" id="priceSort" onchange="setProductsToHtml()">
+                                <option class="assort" selected value="1">min to max</option>
+                                <option class="assort" value="2">max to min</option>
                             </select>
                         </div>
                         <div class="assorts me-auto">
@@ -265,293 +281,10 @@
                     <!-- ---Last products area  -->
                     <section class="last-protucts-list pb-2">
                         <div class="container p-0">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-1.jpg" alt="" class="card-img-top">
+                            <div class="row" id="trending-product">
+                                
+                            <!-- product add area -->
 
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Accessories</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Quartz Belt Watch</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-2.jpg" alt="" class="card-img-top">
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Beauty</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Women Freshwash</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-3.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Decor</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Room Flash Light</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-
-                                            <img src="assets/images/Home/product-4.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Decor</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Room Flash Light</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-5.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Accessories</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Bluetooth Speaker</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-6.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Accessories</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Camera</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-7.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Kids Toy</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Charging Phone</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-
-                                            <img src="assets/images/Home/product-8.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Kids Toy</p>
-                                            <h4 class="card-title hd-color">
-                                                <a href="">Charging Car</a>
-                                            </h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card text-center card-product">
-                                        <div class="product-image">
-                                            <img src="assets/images/Home/product-1.jpg" alt="" class="card-img-top">
-
-                                            <ul class="product-overlay">
-                                                <li>
-                                                    <a href="#" class="icon-search btn">
-                                                        <i class="fas fa-search "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-shop-cart btn">
-                                                        <i class="fas fa-shopping-cart "></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="icon-heart btn">
-                                                        <i class="fas fa-heart "></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="card-body">
-                                            <p>Accessories</p>
-                                            <h4 class="card-title hd-color"><a href="">Quartz Belt Watch</a></h4>
-                                            <p class="card-text product-price">$150.00</p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -946,6 +679,8 @@
         </div>
     </footer>
     <!-- ---Footer area end--- -->
+
+    <script src="shop.js"></script>
 </body>
 
 </html>

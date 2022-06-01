@@ -266,6 +266,21 @@ display: none;
     left: 10px;
     display: none;
 }
+
+.hovermesage {
+    width: 300px;
+    height: 100px;
+    background-color: teal;
+    border-radius:5px;
+    border-style: dotted;
+    font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    display: none;
+}
  
 
 

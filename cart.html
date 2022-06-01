@@ -52,7 +52,7 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-
+ <!-- hover------------- -->
                     <ul class="nav-right">
                         <li class="nav-item">
                             <a href="#" class="icon-search"><i class="fas fa-search"></i></a>
@@ -62,76 +62,18 @@
                                     style="    transform: rotateY(150deg);"></i>
                                 <span class="badge rounded-pill bg-primary nav-badge" id="cart-shop">3</span>
                             </a>
-                            <div class="dropdown-cart dropdown-right">
-                                <div class="card border-0 rounded-0" style="width: 350px;">
-                                    <div class="media d-flex mx-3 my-2">
-                                        <img src="img/612.jpg" alt="Image" class="pe-3" style="width:80px;">
-                                        <div class="media-body d-flex align-items-center me-2">
-                                            <p class="fw-bold">images</p>
-                                        </div>
-                                        <div class="card-body d-flex justify-content-evenly ">
-                                            <div class="d-flex justify-content-center" style="margin-top:10px;">
-                                                <i class="fa-solid fa-minus pe-1"
-                                                    style="font-size:10px; margin-top:1px; color:red; cursor: pointer;"></i>
-                                                <p class=" " style="font-size:15px; margin-top:-6px">2</p> <i
-                                                    class="fa-solid fa-plus fs ps-1"
-                                                    style="font-size:10px; color:#21C916; margin-top: 1px; cursor:pointer"></i>
-                                            </div>
-                                            <p class="" style="font-size:14px; margin-top: 5px;">$26</p>
-                                            <i class="fa-regular fa-trash-can"
-                                                style="font-size:12px; margin-top:9px; color:red; cursor:pointer;"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card border-0 rounded-0" style="width: 350px;">
-                                    <div class="media d-flex mx-3 my-2">
-                                        <img src="img/612.jpg" alt="Image" class="pe-3" style="width:80px;">
-                                        <div class="media-body d-flex align-items-center me-2">
-                                            <p class="fw-bold">images</p>
-                                        </div>
-                                        <div class="card-body d-flex justify-content-evenly ">
-                                            <div class="d-flex justify-content-center" style="margin-top:10px;">
-                                                <i class="fa-solid fa-minus pe-1"
-                                                    style="font-size:10px; margin-top:1px; color:red; cursor: pointer;"></i>
-                                                <p class=" " style="font-size:15px; margin-top:-6px">2</p> <i
-                                                    class="fa-solid fa-plus fs ps-1"
-                                                    style="font-size:10px; color:#21C916; margin-top: 1px; cursor:pointer"></i>
-                                            </div>
-                                            <p class="" style="font-size:14px; margin-top: 5px;">$26</p>
-                                            <i class="fa-regular fa-trash-can"
-                                                style="font-size:12px; margin-top:9px; color:red; cursor: pointer;"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card border-0 rounded-0" style="width: 350px;">
-                                    <div class="media d-flex mx-3 my-2">
-                                        <img src="img/612.jpg" alt="Image" class="pe-3" style="width:80px;">
-                                        <div class="media-body d-flex align-items-center me-2">
-                                            <p class="fw-bold">images</p>
-                                        </div>
-                                        <div class="card-body d-flex justify-content-evenly ">
-                                            <div class="d-flex justify-content-center" style="margin-top:10px;">
-                                                <i class="fa-solid fa-minus pe-1"
-                                                    style="font-size:10px; margin-top:1px; color:red;"></i>
-                                                <p class=" " style="font-size:15px; margin-top:-6px">2</p> <i
-                                                    class="fa-solid fa-plus fs ps-1"
-                                                    style="font-size:10px; color:#21C916; margin-top: 1px; cursor:pointer;"></i>
-                                            </div>
-                                            <p class="" style="font-size:14px; margin-top: 5px;">$26</p>
-                                            <i class="fa-regular fa-trash-can"
-                                                style="font-size:12px; margin-top:9px; color:red; cursor:pointer;"></i>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="dropdown-cart dropdown-right hover-metod">
+                                
                                 <div class="card rounded-0  border-start-0 border-end-0">
                                     <div class="card-body" style="display: flex;justify-content: space-between;">
                                         <p class="card-title fs-14 mb-0">SUB-TOTAL:</p>
-                                        <p class="card-text text-dark fw-500 fs-14">$124.00</p>
+                                        <p class="card-text text-dark fw-500 fs-14 subt"></p>
                                     </div>
                                     <div class="card-footer d-flex justify-content-end bg-transparent py-4">
                                         <button type="button" class="btn btn-primary btn-sm me-1 rounded-0">View Cart</button>
-                                        <button type="button" class="btn btn-success btn-sm ms-1 rounded-0">Checkout</button>
+                                        <button type="button" class="btn btn-success btn-sm ms-1 rounded-0"  onclick="removeAll()">Checkout</button>
                                     </div>
+                                
                                 </div>
                             </div>
                         </li>
@@ -141,6 +83,7 @@
                     </ul>
 
                 </div>
+               
             </div>
         </nav>
     </header>
@@ -152,6 +95,7 @@
                 <h1 class="hd-color">Shopping Cart</h1>
                 <p><a href="index.html">Home</a></p>
                 <span> - </span><span>Shopping Cart</span>
+                <div class="hovermesage">sifarisiniz qebul edildi,3 is gunu erzinde unvaniniza catirilacaq</div>
             </div>
         </div>
     </section>
@@ -197,9 +141,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="chkt-btn float-end mt-2">
+                <div class="chkt-btn float-end mt-2" id="checkinner">
+
                     <div>
-                        <button type="button" class="btn btn-success btn-lg py-1 bg-hover" id="check">Checkout</button>
+                        <button type="button" class="btn btn-success btn-lg py-1 bg-hover" id="check" onclick="removeAlltwo()">Checkout</button>
                     </div>
                   
                 </div>
